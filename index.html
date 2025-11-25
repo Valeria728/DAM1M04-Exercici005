@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transiciones -- Practica CSS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/estilos.css" target="_blank">
+</head>
+<body class="site">
+    <head class="navbar">
+        <nav class="nav-inner">
+            <a class="brand" href="index.html">MiMiniSitio</a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="galeria.html">Galeria</a></li>
+                <li><a href="guia-estil.html">Guía de Estilo</a></li>
+            </ul>
+        </nav>
+    </head>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1 class="display">
+                    Transiciones con estilo
+                </h1>
+                <p>
+                    Practica de transiciones CSS para mejorar la experiencia de usuario al interactuar con elementos de la página web sin JavaScript.
+                </p>
+                <a class="btn primary" href="#tarjetas">
+                    <span class="material-icons">
+                        open_in_new <br>
+                    </span>
+                    Ver Tarjetas
+                </a>
+            </div>
+
+            <div class="hero-visual">
+                <img src="assets/img/tarjeta0.jpg" alt="Mockup" class="hero-img">
+            </div>
+        </section>
+
+        <aside class="subnav">
+            <a href="#tarjetas">Tarjetas</a>
+            <a href="timing">Timing-functions</a>
+            <a href="#ejemplos">Ejemplos</a>
+        </aside>
+
+        <section id="tarjetas" class="cards">
+            <h2>Tarjetas Interactivas</h2>
+            <div class="cards-row"> 
+                <article class="card card-linear">
+                    <div class="card-media"><img src="assets/img/tarjeta1.webp" alt=""></div>
+                    <div class="card-body"></div>
+                    <h3>Linear</h3>
+                    <p>Transicion-timing-fuction: linear</p>
+                </article>
+
+                <article class="card card-ease">
+                    <div class="card-media"><img src="assets/img/tarjeta2.jpg" alt=""></div>
+                    <div class="card-body"></div>
+                    <h3>Ease</h3>
+                    <p>Transicion-timing-fuction: ease</p>
+                </article>
+
+                <article class="card card-ease-in-out">
+                    <div class="card-media"><img src="assets/img/tarjeta3.webp" alt=""></div>
+                    <div class="card-body"></div>
+                    <h3>Ease</h3>
+                    <p>Transicion-timing-fuction: ease</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="timings" class="timings">
+            <h2>Comparactiva de timing-functions</h2>
+            <div class="timming-examples">
+                <div class="timing-box linear">linear</div>
+                <div class="timing-box ease">ease</div>
+                <div class="timing-box ease-in">ease-in</div>
+                <div class="timing-box ease-out">ease-out</div>
+                <div class="timing-box ease-in-out">ease-in-out</div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="page-footer">
+        <p>Proyecto de Practica · Tracisiones </p>
+    </footer>
+</body>
+</html>
