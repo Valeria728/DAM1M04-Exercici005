@@ -3,8 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animaciones -- Practica CSS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/estilos.css"  target="_blank">
 </head>
 <body class="site">
+    <header class="navbar">
+        <nav class="nav-inner">
+            <a class="brand" href="index.html">MiMiniSitio</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="galeria.html">Galeria</a></li>
+                <li><a href="guia-estil.html">Guía de Estilo</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="loader-section">
+            <h1>Loader css</h1>
+            <div class="loader" aria-hidden="true"></div>
+        </section>
+
+        <section class="anim-main">
+            <h2>Pieza animada principal</h2>
+            <div class="anim-card">
+                <div class="anim-block"></div>
+                <p>La animación combina transform, opacity y cambio de color</p>
+            </div>
+        </section>
+
+        <section class="scroll-reveal">
+            <h2>Scroll reveal (animation-timeline)</h2>
+
+            <div class="reveal-list">
+                <div class="reveal-items">Bloque A</div>
+                <div class="reveal-items">Bloque B</div>
+                <div class="reveal-items">Bloque C</div>
+            </div>
+
+            <p class="note">Si el navegador no soporta <code>animation-timeline: view()</code>, se aplica un fallback con @supports.</p>
+        </section>
+
+        <footer class="page-footer">
+            <p>Proyecto de Practica · Animaciones </p>
+        </footer>   
+    </main>
+
+    
     
 </body>
 </html>
