@@ -9,12 +9,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
 
-    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="estilos.css">
 </head>
 <body class="site">
     <header class="navbar">
         <nav class="nav-inner">
-            <a class="brand" href="index.html">MiMiniSitio</a>
+            <a class="brand" href="index.html">Gatitos🐱</a>
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
                 <li><a target="_blank" href="galeria.html">Galeria</a></li>
@@ -23,7 +23,7 @@
         </nav>
     </header>
 
-    <main>
+    <main class="container">
         <section class="hero">
             <div class="hero-content">
                 <h1 class="display">
@@ -41,7 +41,7 @@
             </div>
 
             <div class="hero-visual">
-                <img src="assets/img/tarjeta0.jpg" alt="Mockup" class="hero-img">
+                <img src="assets/img/tarjeta0.jpeg" alt="Mockup" class="hero-img">
             </div>
         </section>
 
@@ -55,24 +55,39 @@
             <h2>Tarjetas Interactivas</h2>
             <div class="cards-row"> 
                 <article class="card card-linear">
-                    <div class="card-media"><img src="assets/img/tarjeta1.webp" alt=""></div>
+                    <div class="card-media"><img class="default-img" src="assets/img/tarjeta1.webp" alt=""> <img class="hover-img" src="assets/img/tarjeta01.jpeg" alt=""></div>
                     <div class="card-body"></div>
-                    <h3>Linear</h3>
-                    <p>Transicion-timing-fuction: linear</p>
+                    <h3 class="parrafo">Linear</h3>
+                    <p class="parrafo">Transicion-timing-fuction: linear</p>
                 </article>
 
                 <article class="card card-ease">
-                    <div class="card-media"><img src="assets/img/tarjeta2.jpg" alt=""></div>
+                    <div class="card-media"><img class="default-img" src="assets/img/tarjeta2.jpg" alt=""><img class="hover-img" src="assets/img/tarjeta02.jpg" alt=""></div>
                     <div class="card-body"></div>
-                    <h3>Ease</h3>
-                    <p>Transicion-timing-fuction: ease</p>
+                    <h3 class="parrafo">Ease</h3>
+                    <p class="parrafo">Transicion-timing-fuction: ease</p>
                 </article>
 
                 <article class="card card-ease-in-out">
-                    <div class="card-media"><img src="assets/img/tarjeta3.webp" alt=""></div>
+                    <div class="card-media"><img class="default-img" src="assets/img/tarjeta3.webp" alt=""><img class="hover-img" src="assets/img/tarjeta03.jpg" alt=""></div>
                     <div class="card-body"></div>
-                    <h3>Ease</h3>
-                    <p>Transicion-timing-fuction: ease</p>
+                    <h3 class="parrafo">Ease</h3>
+                    <p class="parrafo">Transicion-timing-fuction: ease</p>
+                </article>
+            </div>
+            <div class="card-row">
+                <article class="card card-ease-in-out">
+                    <div class="card-media"><img class="default-img" src="assets/img/tarjeta3.jpg" alt=""><img class="hover-img" src="assets/img/tarjeta44.png" alt=""></div>
+                    <div class="card-body"></div>
+                    <h3 class="parrafo">Ease</h3>
+                    <p class="parrafo">Transicion-timing-fuction: ease</p>
+                </article>
+
+                <article class="card card-ease-in-out">
+                    <div class="card-media"><img class="default-img" src="assets/img/tarjeta4.webp" alt=""><img class="hover-img" src="assets/img/tarjeta45.jpg" alt=""></div>
+                    <div class="card-body"></div>
+                    <h3 class="parrafo">Ease</h3>
+                    <p class="parrafo">Transicion-timing-fuction: ease</p>
                 </article>
             </div>
         </section>

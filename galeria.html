@@ -8,17 +8,16 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
-
-    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="estilos.css">
 </head>
 <body class="site">
     <header class="navbar">
         <nav class="nav-inner">
-            <a class="brand" href="index.html">MiMiniSitio</a>
+            <a class="brand" href="index.html">Gatitos🐱</a>
             <ul class="nav-links">
-                <li><a href="index.html" target="IndexTab">Home</a></li>
-                <li><a href="galeria.html" target="GaleriaTab">Galeria</a></li>
-                <li><a href="guia-estil.html" target="GuiaEstilTab">Guía de Estilo</a></li>
+                <li><a href="index.html" target="_blank">Home</a></li>
+                <li><a href="galeria.html" target="_blank">Galeria</a></li>
+                <li><a href="guia-estil.html" target="_blank">Guía de Estilo</a></li>
             </ul>
         </nav>
     </header>
@@ -37,22 +36,23 @@
             </div>
         </section>
 
-        <section class="scroll-reveal">
+        <section>
             <h2>Scroll reveal (animation-timeline)</h2>
 
             <div class="reveal-list">
-                <div class="reveal-items">Bloque A</div>
-                <div class="reveal-items">Bloque B</div>
-                <div class="reveal-items">Bloque C</div>
+                <div class="reveal-item">Bloque A</div>
+                <div class="reveal-item">Bloque B</div>
+                <div class="reveal-item">Bloque C</div>
             </div>
 
             <p class="note">Si el navegador no soporta <code>animation-timeline: view()</code>, se aplica un fallback con @supports.</p>
         </section>
 
-        <footer class="page-footer">
-            <p>Proyecto de Practica · Animaciones </p>
-        </footer>   
     </main>
+
+    <footer class="page-footer">
+        <p>Proyecto de Practica · Animaciones </p>
+    </footer>   
 
     
     
