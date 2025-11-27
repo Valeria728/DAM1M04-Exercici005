@@ -4,8 +4,91 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fonts + Material Icons</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+
+    <link target="_blank" rel="stylesheet" href="css/estilos.css">
 </head>
-<body>
-    
+<body class="site">
+    <header class="navbar">
+        <nav class="nav-inner">
+            <a class="brand" href="index.html">MiMiniSitio</a>
+            <ul class="nav-links">
+                <li><a href="index.html" target="indexTab">Home</a></li>
+                <li><a href="galeria.html" target="galeriaTab">Galeria</a></li>
+                <li><a href="guia-estil.html" target="guiaEstilTab">Guía de Estilo</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main class="container styleguide">
+        <section>
+            <h1>Tipografía</h1>
+            <p class="muted">Familias usadas: <strong>Montserrat</strong> (títulos) y <strong>Inter</strong> (texto).</p>
+
+
+            <div class="type-sample">
+                <div>
+                    <h1>H1 · Título principal (Montserrat 800)</h1>
+                    <h2>H2 · Subtítulo (Montserrat 600)</h2>
+                    <h3>H3 · Sección (Montserrat 600)</h3>
+                    <p>Parrafo de ejemplo en <code>Inter</code>. Peso normal 400. Line-height y letter-spacing adaptados para accesibilidad</p>
+                </div> 
+
+                <div class="baseline-example">
+                    <p><span class="material-icons-outlined align-icon">check_circle</span> Texto alineado con icono a la baseline</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Material Icons  ·   Opciones</h2>
+            <div class="icons-sample">
+                <div class="icon-row">
+                    <span class="material-icons-outlined">home</span>
+                    <span class="legend">home · default</span>
+                </div>
+                <div class="icon-row">
+                    <span class="material-icons-outlined" style="font-variation-settings: 'wght' 700;">search</span>
+                    <span class="legend">search · wght 700</span>
+                </div>
+                <div class="icon-row">
+                    <span class="material-icons-outlined" style="font-variation-settings: 'opsz' 20;">settings</span>
+                    <span class="legend">settings · opsz 20</span>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Botones</h2>
+            <div class="btn-samples">
+                <a href="btn primary" ><span class="material-icons-outlined">download</span> Descargar</a>
+                <a href="btn ghost" ><span class="material-icons-outlined">share</span> Compartir</a>
+            </div>
+        </section>
+
+        <section>
+            <h2>Colores</h2>
+            <table class="color-table ">
+                <thead><tr><th>Nombre</th><th>HEX</th><th>RGB</th><th>HSL</th><th>Con alpha</th></tr></thead>
+                <tbody>
+                    <tr>
+                        <td>Primario</td>
+                        <td>1E90FF</td>
+                        <td>30,144,255</td>
+                        <td>210,100%,56%</td>
+                        <td>rgba(30,144,255,0.12)</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        
+        <footer class="page-footer">
+            <p>Proyecto de Practica · Guía de Estilos </p>
+        </footer>
+    </main>
 </body>
 </html>
